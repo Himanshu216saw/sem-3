@@ -1,0 +1,37 @@
+const fs = require("fs");
+
+// 1. Create
+fs.writeFile("notes.txt", "Created using async CRUD\n", (err) => {
+  if (err) {
+    console.error("Create error:", err);
+    return;
+  }
+  console.log("File created successfully");
+
+  // 2. Update
+  fs.appendFile("notes.txt", "Updated using async append\n", (err) => {
+    if (err) {
+      console.error("Update error:", err);
+      return;
+    }
+    console.log("File updated successfully");
+
+    // 3. Read
+    fs.readFile("notes.txt", "utf8", (err, data) => {
+      if (err) {
+        console.error("Read error:", err);
+        return;
+      }
+      console.log("Read Data:", data);
+
+      // 4. Delete
+      fs.rm("notes.txt", (err) => {
+        if (err) {
+          console.error("Delete error:", err);
+          return;
+        }
+        console.log("File deleted successfully: notes.txt");
+      });
+    });
+  });
+});
