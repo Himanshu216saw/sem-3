@@ -1,0 +1,45 @@
+In Node.js, streaming means processing data piece by piece instead of loading the whole file or data into memory at once.
+
+Example
+Instead of waiting for a full file to download before using it, a stream sends chunks continuously.
+
+Why it is useful
+handles large files efficiently
+reduces memory usage
+works well for reading/writing files, network data, and real-time data
+Types of streams
+Readable stream: reads data
+Writable stream: writes
+
+In simple words
+Streaming means:
+“Don’t wait for everything; process data as it arrives.”
+
+If you want, I can also explain:
+
+streaming vs normal file reading
+Readable and Writable streams
+how it is used in file handling in your Node.js notes.
+9:
+
+atch 'content.txt'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Object.<anonymous> (D:\sem 3\file_system_module\file watcher\watch.js:3:4)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  errno: -4058,
+  syscall: 'watch',
+  code: 'ENOENT',
+  path: 'content.txt',
+  filename: 'content.txt'
+}
+
+Node.js v24.14.0
+
+D:\sem 3\file_system_module\file watcher> correct the error

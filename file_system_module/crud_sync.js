@@ -1,4 +1,5 @@
-const fs = require("fs");
+const fs = require("fs");  //es module call function
+
 
 // 1. Create
 fs.writeFileSync("notes.txt", "Created using sync CRUD\n");
