@@ -1,0 +1,5 @@
+{
+  "message": "Hello from the local JSON server",
+  "course": "Node.js and Express",
+  "status": "online"
+}
